@@ -10,14 +10,18 @@ from bs4 import BeautifulSoup
 from pathlib import Path,PurePath
 import shutil, sys
 
-template= '''
-library flutter_iconfont;
+template= '''library flutter_iconfont;
 
-import 'package:flutter/widgets.dart';
+import 'package:flutter/widgets.dart' show IconData;
 import 'flutter_icon_data.dart';
 
+///
+/// This is an automatically generated code
+///author: arcticfox1919
+///github: https://github.com/arcticfox1919/flutter_iconfont
+///
 class IconFonts{{
-    IconFonts._();
+  IconFonts._();
 
 {code}
 }}
@@ -39,9 +43,9 @@ def html_parse(html_path):
         r = []
         if icon_list:
             for el in icon_list:
-                name = el.select("div[class='name']")[0].string
+                name = el.select("div[class='name']")[0].string.replace(' ','_')
                 code = el.select("div[class='code-name']")[0].string[:-1].replace('&#','0')
-                r.append('''    static const IconData {0} = const IconDataEx({1});'''.format(name, code))
+                r.append('''  static const IconData {0} = const IconDataEx({1});'''.format(name, code))
         else:
             raise Exception("%s file parsing failed" % html_path)
         return r
