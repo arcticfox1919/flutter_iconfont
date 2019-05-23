@@ -2,12 +2,12 @@
 > Generate flutter icon from [https://www.iconfont.cn/](https://www.iconfont.cn/)
 
 
-[https://www.iconfont.cn/](https://www.iconfont.cn/) 为我们提供了海量的矢量图标资源，Flutter中使用的时候也还方便，但是在下载大量资源后，仍然需要手动做一些事情，这不符合程序员能偷懒就偷懒的精神，所以我做了这个简单工具，希望对大家有所帮助。
+[https://www.iconfont.cn/](https://www.iconfont.cn/) 为我们提供了海量的矢量图标资源，在Flutter中使用这些资源也还方便，但是在下载大量资源后，仍然需要手动做一些事情，这不符合程序员能偷懒就偷懒的精神，所以我做了这个简单工具，希望对大家有所帮助。
 
 
 **使用说明**
 
-1. 使用`git clone` 或者直接download zip文件到本地
+1. 使用`git clone git@github.com:arcticfox1919/flutter_iconfont.git` 或者直接download zip文件到本地
 2. 进入[iconfont](https://www.iconfont.cn/)网站，选取想要的icon到购物车，最后【下载代码】
 ![](https://github.com/arcticfox1919/ImageHosting/blob/master/Snipaste_2019-05-23_16-57-40.jpg?raw=true)
 
