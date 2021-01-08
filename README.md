@@ -2,6 +2,9 @@
 > Generate flutter icon from [https://www.iconfont.cn/](https://www.iconfont.cn/)
 
 
+**文中图片若不显示，请查看[原始链接](https://arcticfox.blog.csdn.net/article/details/90485919)**
+
+
 [https://www.iconfont.cn/](https://www.iconfont.cn/) 为我们提供了海量的矢量图标资源，在Flutter中使用这些资源也还方便，但是在下载大量资源后，仍然需要手动做一些事情，这不符合程序员能偷懒就偷懒的精神，所以我做了这个简单工具，希望对大家有所帮助。
 
 
@@ -49,3 +52,4 @@
   
   return Center(child:Icon(IconFonts.Arrow_down))
   ```
+  
